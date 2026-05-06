@@ -1119,14 +1119,25 @@ h1 .hl{
   left:100%;
 }
 
+.form-submit {
+  transition: transform .2s, box-shadow .2s;
+}
+
 .form-submit:active {
-  transform:translateY(-1px);
+  transform: translateY(-1px);
 }
-  transition:transform .2s,box-shadow .2s;
+
+.form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(26,143,255,.5);
 }
-.form-submit:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(26,143,255,.5);}
-.form-privacy{
-  font-size:.72rem;color:var(--soft);text-align:center;margin-top:10px;line-height:1.5;
+
+.form-privacy {
+  font-size: .72rem;
+  color: var(--soft);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
 /* ============================================================
