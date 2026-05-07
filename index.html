@@ -1,531 +1,632 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orlay Pay – Continuità di vendita per eventi live</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlay Pay – Continuità di vendita per eventi live</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      NAV
 ══════════════════════════════════════════ -->
-<nav>
-  <div class="logo-wrap">
-      <img src="images/logo-full.png" alt="Orlay Pay" class="logo-img">
-  </div>
-  <ul>
-    <li><a href="#problem">Il Problema</a></li>
-    <li><a href="#solution">Soluzione</a></li>
-    <li><a href="#console">Console</a></li>
-    <li><a href="#analytics">Analytics</a></li>
-    <li><a href="#cta-final" class="nav-cta">Richiedi una demo</a></li>
-  </ul>
-</nav>
+    <nav>
+        <div class="logo-wrap">
+            <img src="images/logo-full.png" alt="Orlay Pay" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="#problem">Il Problema</a></li>
+            <li><a href="#solution">Soluzione</a></li>
+            <li><a href="#console">Console</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#cta-final" class="nav-cta">Richiedi una demo</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<!-- ══════════════════════════════════════════
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay">
+        <ul>
+            <li><a href="#problem">Il Problema</a></li>
+            <li><a href="#solution">Soluzione</a></li>
+            <li><a href="#console">Console</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#cta-final" class="nav-cta">Richiedi una demo</a></li>
+        </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════
      S1 – HERO
 ══════════════════════════════════════════ -->
-<section id="hero">
-  <!-- LEFT: Phone mockup -->
-  <div class="hero-visual reveal from-left">
-    <div class="circle-deco"></div>
-    <div class="stat-card stat-card-1">
-      <div class="stat-val">+38%</div>
-      <div class="stat-lbl">ordini completati</div>
-      <div class="stat-badge">↑ picco serata</div>
-    </div>
-    <div class="stat-card stat-card-2">
-      <div class="stat-val">2.4s</div>
-      <div class="stat-lbl">tempo medio ordine</div>
-      <div class="stat-badge">↓ vs cassa tradizionale</div>
-    </div>
-    <div class="phone">
-      <div class="phone-notch"></div>
-      <div class="phone-screen">
-        <div class="sc-hdr">
-          <div class="sc-logo">≡→ orlay<span class="sc-pay">pay</span></div>
-          <div class="sc-icon"></div>
-        </div>
-        <div class="wifi-badge">Connesso alla rete del locale</div>
-        <div class="ev-card">
-          <div class="ev-icon"></div>
-          <div><div class="ev-title">Summer Festival 2026 Future</div><div class="ev-meta">30 mar - 30 apr · Ippodromo Snai, Milano</div></div>
-        </div>
-        <div class="sc-search">🔍 Cerca prodotti</div>
-        <div class="cat-pills-sc">
-          <div class="cat-pill active">Tutte</div><div class="cat-pill">Beer</div>
-          <div class="cat-pill">Cocktail</div><div class="cat-pill">Spirit</div>
-        </div>
-        <div class="sc-lbl">Altri menu disponibili</div>
-        <div class="menu-row-sc">
-          <div class="menu-item-sc"><div class="menu-thumb-sc">🌮</div><div class="menu-name-sc">Taco Truck</div></div>
-          <div class="menu-item-sc"><div class="menu-thumb-sc">🍔</div><div class="menu-name-sc">Milano Drive In</div></div>
-          <div class="menu-item-sc"><div class="menu-thumb-sc">🍕</div><div class="menu-name-sc">Fra e Mangia</div></div>
-          <div class="menu-item-sc"><div class="menu-thumb-sc">🥩</div><div class="menu-name-sc">Arrost. Truck</div></div>
-        </div>
-        <div class="sc-lbl">Drink</div>
-        <div class="prods">
-          <div class="prod"><div class="prod-img">🍺</div><div class="prod-info"><span class="prod-name">Beer Lager</span><span class="prod-price">0,01€</span></div><div class="add-btn-sc">AGGIUNGI</div></div>
-          <div class="prod"><div class="prod-img">🍻</div><div class="prod-info"><span class="prod-name">IPA Beer</span><span class="prod-price">0,01€</span></div><div class="add-btn-sc">AGGIUNGI</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <section id="hero" data-bg-color="#f8fbff">
+        <!-- Floating gradient blobs -->
+        <div class="gradient-blob blob-1 hero-blob-1"></div>
+        <div class="gradient-blob blob-2 hero-blob-2"></div>
 
-  <!-- RIGHT: Copy -->
-  <div class="hero-content reveal from-right">
-    <div class="eyebrow-badge">
-      <div class="dot"></div>
-      Continuità di vendita per eventi live ad alta affluenza
-    </div>
-    <h1>
-      Il pubblico è già lì.
-      <span class="hl">Non perdere vendite<br>nei momenti di picco.</span>
-    </h1>
-    <p class="hero-body">
-      Orlay Pay aiuta organizzatori, venue e operatori food &amp; beverage a rendere ordine, incasso e ritiro più fluidi: meno code, meno rinunce, più controllo operativo.
-    </p>
-    <div class="flow-steps">
-      <div class="step-btn">📦 Order</div>
-      <div class="step-arrow">›</div>
-      <div class="step-btn ghost">💳 Payment</div>
-      <div class="step-arrow">›</div>
-      <div class="step-btn ghost">📲 Pickup</div>
-    </div>
-    <div class="cta-block">
-      <button class="btn-primary">Richiedi una demo</button>
-      <button class="btn-ghost-outline">▶ Scopri come funziona</button>
-    </div>
-    <div class="cta-micro">
-      <span>Food &amp; beverage</span><span>Hospitality</span><span>Aree VIP</span><span>Punti bar</span><span>Merchandising</span>
-    </div>
-  </div>
-</section>
+        <!-- LEFT: Phone mockup -->
+        <div class="hero-visual reveal from-left">
+            <div class="circle-deco"></div>
+            <div class="stat-card stat-card-1">
+                <div class="stat-val">+38%</div>
+                <div class="stat-lbl">ordini completati</div>
+                <div class="stat-badge">↑ picco serata</div>
+            </div>
+            <div class="stat-card stat-card-2">
+                <div class="stat-val">2.4s</div>
+                <div class="stat-lbl">tempo medio ordine</div>
+                <div class="stat-badge">↓ vs cassa tradizionale</div>
+            </div>
+            <div class="phone-image-wrap">
+                <img src="images/mobileImage.png" alt="Orlay Pay Mobile App" class="phone-image">
+            </div>
+        </div>
 
-<!-- ══════════════════════════════════════════
+        <!-- RIGHT: Copy -->
+        <div class="hero-content reveal from-right">
+            <div class="eyebrow-badge">
+                <div class="dot"></div>
+                Continuità di vendita per eventi live ad alta affluenza
+            </div>
+            <h1>
+                Il pubblico è già lì.
+                <span class="hl">Non perdere vendite<br>nei momenti di picco.</span>
+            </h1>
+            <p class="hero-body">
+                Orlay Pay aiuta organizzatori, venue e operatori food &amp; beverage a rendere ordine, incasso e ritiro
+                più fluidi: meno code, meno rinunce, più controllo operativo.
+            </p>
+            <div class="flow-steps">
+                <div class="step-btn">📦 Order</div>
+                <div class="step-arrow">›</div>
+                <div class="step-btn ghost">💳 Payment</div>
+                <div class="step-arrow">›</div>
+                <div class="step-btn ghost">📲 Pickup</div>
+            </div>
+            <div class="cta-block">
+                <button class="btn-primary">Richiedi una demo</button>
+                <button class="btn-ghost-outline">▶ Scopri come funziona</button>
+            </div>
+            <div class="cta-micro">
+                <span>Food &amp; beverage</span><span>Hospitality</span><span>Aree VIP</span><span>Punti
+                    bar</span><span>Merchandising</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+     SOCIAL PROOF STRIP
+══════════════════════════════════════════ -->
+    <div class="social-proof reveal">
+        <div class="proof-item">
+            <div class="proof-number" data-animate data-target="120000">120K+</div>
+            <div class="proof-label">Transazioni elaborate</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-number" data-animate data-target="500">500+</div>
+            <div class="proof-label">Eventi gestiti</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-number" data-animate data-target="98">98%</div>
+            <div class="proof-label">Tasso di soddisfazione</div>
+        </div>
+        <div class="proof-item">
+            <div class="proof-number" data-animate data-target="45">45+</div>
+            <div class="proof-label">Paesi operativi</div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
      S2 – IL PROBLEMA
 ══════════════════════════════════════════ -->
-<section id="problem">
-  <div class="left reveal from-left">
-    <div class="section-eyebrow">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>La vendita si perde prima del pagamento.</h2>
-    <p>Quando l'affluenza cresce, il punto di servizio diventa il collo di bottiglia: il pubblico aspetta, ordina meno o rinuncia. Lo staff gestisce confusione invece di servire.</p>
-  </div>
-  <div class="prob-cards reveal from-right">
-    <div class="prob-card">
-      <div class="prob-icon">⏳</div>
-      <div>
-        <h4>Code e doppia attesa</h4>
-        <p>Il fan perde tempo tra scelta, pagamento e ritiro. Ogni passaggio in più abbassa conversione e scontrino medio.</p>
-      </div>
-    </div>
-    <div class="prob-card">
-      <div class="prob-icon">👥</div>
-      <div>
-        <h4>Staff sotto pressione</h4>
-        <p>Il banco rallenta quando deve ricostruire ordini, importi e prossime azioni. Lo staff smette di servire per gestire congestione.</p>
-      </div>
-    </div>
-    <div class="prob-card">
-      <div class="prob-icon">📊</div>
-      <div>
-        <h4>Dati frammentati</h4>
-        <p>A fine evento è difficile capire dove si è persa domanda. Con strumenti separati i dati arrivano troppo tardi.</p>
-      </div>
-    </div>
-    <div class="prob-card">
-      <div class="prob-icon">🚪</div>
-      <div>
-        <h4>Il fan rinuncia</h4>
-        <p>Il fan rimanda o rinuncia, soprattutto quando percepisce caos. Ogni evento riparte quasi da zero.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="problem" data-bg-color="#000000">
+        <div class="left reveal from-left">
+            <div class="section-eyebrow">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>La vendita si perde prima del pagamento.</h2>
+            <p>Quando l'affluenza cresce, il punto di servizio diventa il collo di bottiglia: il pubblico aspetta,
+                ordina meno o rinuncia. Lo staff gestisce confusione invece di servire.</p>
+        </div>
+        <div class="prob-cards reveal from-right">
+            <div class="prob-card">
+                <div class="prob-icon">⏳</div>
+                <div>
+                    <h4>Code e doppia attesa</h4>
+                    <p>Il fan perde tempo tra scelta, pagamento e ritiro. Ogni passaggio in più abbassa conversione e
+                        scontrino medio.</p>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">👥</div>
+                <div>
+                    <h4>Staff sotto pressione</h4>
+                    <p>Il banco rallenta quando deve ricostruire ordini, importi e prossime azioni. Lo staff smette di
+                        servire per gestire congestione.</p>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">📊</div>
+                <div>
+                    <h4>Dati frammentati</h4>
+                    <p>A fine evento è difficile capire dove si è persa domanda. Con strumenti separati i dati arrivano
+                        troppo tardi.</p>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">🚪</div>
+                <div>
+                    <h4>Il fan rinuncia</h4>
+                    <p>Il fan rimanda o rinuncia, soprattutto quando percepisce caos. Ogni evento riparte quasi da zero.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      S3 – LA SOLUZIONE
 ══════════════════════════════════════════ -->
-<section id="solution">
-  <div class="reveal from-left">
-    <div class="section-eyebrow" style="justify-content:center;">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>Una regia unica per trasformare il servizio in ricavo.</h2>
-    <p class="sub">Orlay Pay rende più leggibile il percorso del fan, più veloce il lavoro dello staff e più chiaro il controllo dell'organizzatore.</p>
-  </div>
-  <div class="four-grid reveal from-right">
-    <div class="sol-card">
-      <div class="sol-icon">✅</div>
-      <h4>Più ordini completati</h4>
-      <p>Soprattutto nelle finestre di massima domanda, quando ogni secondo conta.</p>
-    </div>
-    <div class="sol-card">
-      <div class="sol-icon">⚡</div>
-      <h4>Più velocità al banco</h4>
-      <p>Meno passaggi manuali, meno errori, meno improvvisazione nei momenti critici.</p>
-    </div>
-    <div class="sol-card">
-      <div class="sol-icon">🗺️</div>
-      <h4>Più controllo per zona</h4>
-      <p>Ordini, incassi, ritiri e performance leggibili per area in tempo reale.</p>
-    </div>
-    <div class="sol-card">
-      <div class="sol-icon">📈</div>
-      <h4>Più valore post-evento</h4>
-      <p>Dati utili per decidere pricing, staffing e layout del prossimo evento.</p>
-    </div>
-  </div>
-</section>
+    <section id="solution" data-bg-color="#f8fbff">
+        <div class="reveal from-left">
+            <div class="section-eyebrow" style="justify-content:center;">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>Una regia unica per trasformare il servizio in ricavo.</h2>
+            <p class="sub">Orlay Pay rende più leggibile il percorso del fan, più veloce il lavoro dello staff e più
+                chiaro il controllo dell'organizzatore.</p>
+        </div>
+        <div class="four-grid reveal from-right">
+            <div class="sol-card">
+                <div class="sol-icon">✅</div>
+                <h4>Più ordini completati</h4>
+                <p>Soprattutto nelle finestre di massima domanda, quando ogni secondo conta.</p>
+            </div>
+            <div class="sol-card">
+                <div class="sol-icon">⚡</div>
+                <h4>Più velocità al banco</h4>
+                <p>Meno passaggi manuali, meno errori, meno improvvisazione nei momenti critici.</p>
+            </div>
+            <div class="sol-card">
+                <div class="sol-icon">🗺️</div>
+                <h4>Più controllo per zona</h4>
+                <p>Ordini, incassi, ritiri e performance leggibili per area in tempo reale.</p>
+            </div>
+            <div class="sol-card">
+                <div class="sol-icon">📈</div>
+                <h4>Più valore post-evento</h4>
+                <p>Dati utili per decidere pricing, staffing e layout del prossimo evento.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- ══════════════════════════════════════════
+
+    <section id="wow-story" data-bg-color="#000000">
+
+        <!-- LEFT STORY -->
+        <div class="story-left">
+
+            <div class="story-step active">
+                <div class="story-eyebrow">LIVE CONTROL</div>
+                <h2>Controlla l’evento mentre succede.</h2>
+                <p>
+                    KPI live, punti critici, volumi e performance
+                    leggibili in tempo reale da un’unica dashboard.
+                </p>
+            </div>
+
+            <div class="story-step">
+                <div class="story-eyebrow">SMART ANALYTICS</div>
+                <h2>Capisci dove perdi domanda.</h2>
+                <p>
+                    Analizza aree congestionate, ordini persi
+                    e comportamento del pubblico nei momenti di picco.
+                </p>
+            </div>
+
+            <div class="story-step">
+                <div class="story-eyebrow">EVENT FLOW</div>
+                <h2>Rendi il flusso più ordinato.</h2>
+                <p>
+                    Migliora pickup, food court, VIP e percorsi
+                    con insight operativi post-evento.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT STICKY LAPTOP -->
+        <div class="story-right">
+            <div class="laptop-showcase">
+                <img src="images/macbookDashboard1.png" alt="Dashboard 1" class="screen-img active">
+                <img src="images/macbookDashboard2.png" alt="Dashboard 2" class="screen-img">
+                <img src="images/macbookDashboard3.png" alt="Dashboard 3" class="screen-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
      S4 – CONSOLE ORGANIZZATORE
 ══════════════════════════════════════════ -->
-<section id="console">
-  <div class="reveal from-left">
-    <div class="section-eyebrow">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>Controllo live dell'evento.</h2>
-    <p>Monitora ordini, incassi, ritiri, punti di servizio e aree critiche da una sola vista operativa.</p>
-    <div class="console-caption">
-      Capisci dove la domanda cresce, dove il servizio rallenta e cosa correggere durante l'evento.
-    </div>
-    <ul class="bullet-list" style="margin-top:24px;">
-      <li><div class="bl-dot"></div>Configura aree, menu, listini e percorsi di servizio</li>
-      <li><div class="bl-dot"></div>Legge ciò che funziona in tempo reale e lo corregge durante l'evento</li>
-      <li><div class="bl-dot"></div>Chiude il post-evento con dati utili per pricing, staffing e layout</li>
-    </ul>
-  </div>
-  <div class="reveal from-right">
-    <!--
+    <section id="console" data-bg-color="#000000">
+        <div class="reveal from-left">
+            <div class="section-eyebrow">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>Controllo live dell'evento.</h2>
+            <p>Monitora ordini, incassi, ritiri, punti di servizio e aree critiche da una sola vista operativa.</p>
+            <div class="console-caption" style="color: white;">
+                Capisci dove la domanda cresce, dove il servizio rallenta e cosa correggere durante l'evento.
+            </div>
+            <ul class="bullet-list" style="margin-top:24px;">
+                <li>
+                    <div class="bl-dot"></div>Configura aree, menu, listini e percorsi di servizio
+                </li>
+                <li>
+                    <div class="bl-dot"></div>Legge ciò che funziona in tempo reale e lo corregge durante l'evento
+                </li>
+                <li>
+                    <div class="bl-dot"></div>Chiude il post-evento con dati utili per pricing, staffing e layout
+                </li>
+            </ul>
+        </div>
+        <div class="reveal from-right">
+            <!--
       REPLACE WITH YOUR SCREENSHOT:
       <img src="orlay-console-screenshot.png" alt="Console organizzatore" style="width:100%;border-radius:20px;box-shadow:0 20px 60px rgba(10,30,60,.18);">
     -->
-    <div class="dash-mock">
-      <div class="dash-header">
-        <div>
-          <div class="dash-title">Console operativa evento</div>
-          <div class="dash-meta">Tutti gli eventi · finestra Sempre · aggiornato ora</div>
+            <div class="dash-mock">
+                <div class="dash-header">
+                    <div>
+                        <div class="dash-title">Console operativa evento</div>
+                        <div class="dash-meta">Tutti gli eventi · finestra Sempre · aggiornato ora</div>
+                    </div>
+                    <div class="dash-badge">● LIVE</div>
+                </div>
+                <div class="kpi-row">
+                    <div class="kpi">
+                        <div class="kpi-label">Incassato <span class="live-dot">live</span></div>
+                        <div class="kpi-val" data-animate data-target="37866">37.866 €</div>
+                        <div class="kpi-sub">pagamenti catturati</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Ordini <span class="live-dot">live</span></div>
+                        <div class="kpi-val" data-animate data-target="3000">3.000</div>
+                        <div class="kpi-sub">finestra corrente</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Conversione</div>
+                        <div class="kpi-val" data-animate data-target="65">65%</div>
+                        <div class="kpi-sub">ordini in pagamento</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Ticket medio</div>
+                        <div class="kpi-val" data-animate data-target="1899">18,99 €</div>
+                        <div class="kpi-sub">media per ordine</div>
+                    </div>
+                </div>
+                <div class="kpi2-row">
+                    <div class="kpi">
+                        <div class="kpi-label">Mance</div>
+                        <div class="kpi-val" data-animate data-target="662">662 €</div>
+                        <div class="kpi-sub">totale registrate</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Ordini con mancia</div>
+                        <div class="kpi-val" data-animate data-target="426">426</div>
+                        <div class="kpi-sub">confermata</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Device online</div>
+                        <div class="kpi-val" style="color:#ff6b6b;">0/33</div>
+                        <div class="kpi-sub" style="color:#ff6b6b;">⚠ critico</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpi-label">Coda fiscale</div>
+                        <div class="kpi-val">0</div>
+                        <div class="kpi-sub">queued / retry</div>
+                    </div>
+                </div>
+                <div class="dash-section-title">Ordini e pagamenti nel tempo</div>
+                <div class="chart-area">
+                    <div class="bar" style="height:30%"></div>
+                    <div class="bar" style="height:45%"></div>
+                    <div class="bar" style="height:55%"></div>
+                    <div class="bar highlight" style="height:80%"></div>
+                    <div class="bar highlight" style="height:95%"></div>
+                    <div class="bar" style="height:70%"></div>
+                    <div class="bar" style="height:60%"></div>
+                    <div class="bar" style="height:40%"></div>
+                    <div class="bar" style="height:30%"></div>
+                    <div class="bar" style="height:20%"></div>
+                </div>
+                <div class="alert-row">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-text">Almeno un dispositivo non risulta raggiungibile nel perimetro evento e
+                        richiede verifica immediata.</div>
+                </div>
+            </div>
         </div>
-        <div class="dash-badge">● LIVE</div>
-      </div>
-      <div class="kpi-row">
-        <div class="kpi">
-          <div class="kpi-label">Incassato <span class="live-dot">live</span></div>
-          <div class="kpi-val">37.866 €</div>
-          <div class="kpi-sub">pagamenti catturati</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Ordini <span class="live-dot">live</span></div>
-          <div class="kpi-val">3.000</div>
-          <div class="kpi-sub">finestra corrente</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Conversione</div>
-          <div class="kpi-val">65%</div>
-          <div class="kpi-sub">ordini in pagamento</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Ticket medio</div>
-          <div class="kpi-val">18,99 €</div>
-          <div class="kpi-sub">media per ordine</div>
-        </div>
-      </div>
-      <div class="kpi2-row">
-        <div class="kpi">
-          <div class="kpi-label">Mance</div>
-          <div class="kpi-val">662 €</div>
-          <div class="kpi-sub">totale registrate</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Ordini con mancia</div>
-          <div class="kpi-val">426</div>
-          <div class="kpi-sub">confermata</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Device online</div>
-          <div class="kpi-val" style="color:#ff6b6b;">0/33</div>
-          <div class="kpi-sub" style="color:#ff6b6b;">⚠ critico</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Coda fiscale</div>
-          <div class="kpi-val">0</div>
-          <div class="kpi-sub">queued / retry</div>
-        </div>
-      </div>
-      <div class="dash-section-title">Ordini e pagamenti nel tempo</div>
-      <div class="chart-area">
-        <div class="bar" style="height:30%"></div>
-        <div class="bar" style="height:45%"></div>
-        <div class="bar" style="height:55%"></div>
-        <div class="bar highlight" style="height:80%"></div>
-        <div class="bar highlight" style="height:95%"></div>
-        <div class="bar" style="height:70%"></div>
-        <div class="bar" style="height:60%"></div>
-        <div class="bar" style="height:40%"></div>
-        <div class="bar" style="height:30%"></div>
-        <div class="bar" style="height:20%"></div>
-      </div>
-      <div class="alert-row">
-        <div class="alert-icon">⚠️</div>
-        <div class="alert-text">Almeno un dispositivo non risulta raggiungibile nel perimetro evento e richiede verifica immediata.</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      S5 – MAPPA / AREE
 ══════════════════════════════════════════ -->
-<section id="mapview">
-  <div class="reveal from-left">
-    <!--
-      REPLACE WITH YOUR SCREENSHOT:
-      <img src="orlay-map-screenshot.png" alt="Mappa evento" style="width:100%;border-radius:20px;box-shadow:0 20px 60px rgba(10,30,60,.14);">
-    -->
-    <div class="map-mock">
-      <div class="map-inner">
-        <div class="map-bg"></div>
-        <div class="map-grid"></div>
-        <div class="map-zones">
-          <div class="zone z-stage">🎤 Stage</div>
-          <div class="zone z-bar1">🍺 Bar A</div>
-          <div class="zone z-bar2">🍺 Bar B</div>
-          <div class="zone z-vip">⭐ VIP</div>
-          <div class="map-pin p1"></div>
-          <div class="map-pin p2"></div>
-          <div class="map-pin p3"></div>
-          <div class="map-pin p4"></div>
+    <section id="mapview" data-bg-color="#f8fbff">
+        <div class="reveal from-left">
+            <img src="/images/mapImage.png" alt="Mappa evento"
+                style="width:100%;border-radius:20px;box-shadow:0 20px 60px rgba(10,30,60,.14);">
         </div>
-        <div class="map-legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Punto servizio</div>
-          <div class="legend-item"><div class="legend-dot" style="background:rgba(26,143,255,.4)"></div>Area food</div>
-          <div class="legend-item"><div class="legend-dot" style="background:rgba(255,200,0,.5)"></div>VIP</div>
+        <div class="reveal from-right">
+            <div class="section-eyebrow">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>L'evento diventa più leggibile.</h2>
+            <p>Mappe, informazioni e percorsi aiutano il pubblico a capire dove andare e riducono domande ripetitive
+                allo staff.</p>
+            <div class="console-caption">
+                Utile per food court, bar, hospitality, VIP, merch e punti di ritiro dedicati.
+            </div>
+            <ul class="bullet-list" style="margin-top:24px;">
+                <li>
+                    <div class="bl-dot"></div>Aiutano il fan a capire dove andare e cosa fare
+                </li>
+                <li>
+                    <div class="bl-dot"></div>Riducono domande ripetitive e pressione sul personale
+                </li>
+                <li>
+                    <div class="bl-dot"></div>Attivano percorsi dedicati per VIP, merch e pickup specifici
+                </li>
+                <li>
+                    <div class="bl-dot"></div>Rendono l'evento più leggibile e più ordinato nei momenti critici
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="reveal from-right">
-    <div class="section-eyebrow">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>L'evento diventa più leggibile.</h2>
-    <p>Mappe, informazioni e percorsi aiutano il pubblico a capire dove andare e riducono domande ripetitive allo staff.</p>
-    <div class="console-caption">
-      Utile per food court, bar, hospitality, VIP, merch e punti di ritiro dedicati.
-    </div>
-    <ul class="bullet-list" style="margin-top:24px;">
-      <li><div class="bl-dot"></div>Aiutano il fan a capire dove andare e cosa fare</li>
-      <li><div class="bl-dot"></div>Riducono domande ripetitive e pressione sul personale</li>
-      <li><div class="bl-dot"></div>Attivano percorsi dedicati per VIP, merch e pickup specifici</li>
-      <li><div class="bl-dot"></div>Rendono l'evento più leggibile e più ordinato nei momenti critici</li>
-    </ul>
-  </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      S6 – PER CHI È
 ══════════════════════════════════════════ -->
-<section id="forwhom">
-  <div class="reveal from-left">
-    <div class="section-eyebrow" style="justify-content:center;">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>Pensato per eventi dove ogni minuto di coda costa ricavo.</h2>
-    <p class="sub">Orlay Pay è adatto a contesti con alta densità di pubblico, più punti di servizio e domanda concentrata in finestre brevi.</p>
-  </div>
-  <div class="chips-grid reveal from-right">
-    <div class="chip-lg"><span class="chip-emoji">🎪</span> Festival</div>
-    <div class="chip-lg"><span class="chip-emoji">🎸</span> Concerti</div>
-    <div class="chip-lg"><span class="chip-emoji">🏟️</span> Stadi e palazzetti</div>
-    <div class="chip-lg"><span class="chip-emoji">🍽️</span> Food court</div>
-    <div class="chip-lg"><span class="chip-emoji">🏨</span> Hospitality</div>
-    <div class="chip-lg"><span class="chip-emoji">⭐</span> Aree VIP</div>
-    <div class="chip-lg"><span class="chip-emoji">👕</span> Merchandising</div>
-    <div class="chip-lg"><span class="chip-emoji">🏢</span> Eventi corporate</div>
-  </div>
-</section>
+    <section id="forwhom" data-bg-color="#000000">
+        <div class="reveal from-left">
+            <div class="section-eyebrow" style="justify-content:center;">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>Pensato per eventi dove ogni minuto di coda costa ricavo.</h2>
+            <p class="sub">Orlay Pay è adatto a contesti con alta densità di pubblico, più punti di servizio e domanda
+                concentrata in finestre brevi.</p>
+        </div>
+        <div class="chips-grid reveal from-right">
+            <div class="chip-lg"><span class="chip-emoji">🎪</span> Festival</div>
+            <div class="chip-lg"><span class="chip-emoji">🎸</span> Concerti</div>
+            <div class="chip-lg"><span class="chip-emoji">🏟️</span> Stadi e palazzetti</div>
+            <div class="chip-lg"><span class="chip-emoji">🍽️</span> Food court</div>
+            <div class="chip-lg"><span class="chip-emoji">🏨</span> Hospitality</div>
+            <div class="chip-lg"><span class="chip-emoji">⭐</span> Aree VIP</div>
+            <div class="chip-lg"><span class="chip-emoji">👕</span> Merchandising</div>
+            <div class="chip-lg"><span class="chip-emoji">🏢</span> Eventi corporate</div>
+        </div>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      S7 – ANALYTICS
 ══════════════════════════════════════════ -->
-<section id="analytics">
-  <div class="reveal from-left">
-    <div class="section-eyebrow">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>Il valore non finisce a fine serata.</h2>
-    <p>Leggi cosa converte, cosa rallenta e dove si perde domanda. Usa i dati per migliorare pricing, staffing, layout e offerta del prossimo evento.</p>
-    <div class="analytics-cards">
-      <div class="an-card">
-        <div class="an-icon">📍</div>
-        <h4>Performance per area</h4>
-        <p>Quali zone vendono e quali rallentano. Per fascia oraria e punto di servizio.</p>
-      </div>
-      <div class="an-card">
-        <div class="an-icon">📈</div>
-        <h4>Picchi reali</h4>
-        <p>Quando la domanda cresce davvero. Lettura dei colli di bottiglia in tempo reale.</p>
-      </div>
-      <div class="an-card">
-        <div class="an-icon">🛒</div>
-        <h4>Mix prodotti</h4>
-        <p>Cosa viene scelto, cosa resta indietro. Evidenza di cosa converte e cosa rallenta.</p>
-      </div>
-      <div class="an-card">
-        <div class="an-icon">🧠</div>
-        <h4>Decisioni migliori</h4>
-        <p>Meno percezioni, più evidenze operative. Insight concreti per il prossimo evento.</p>
-      </div>
-    </div>
-  </div>
-  <div class="reveal from-right">
-    <!--
+    <section id="analytics" data-bg-color="#f8fbff">
+        <!-- Floating gradient blobs -->
+        <div class="gradient-blob blob-1 analytics-blob-1"></div>
+        <div class="gradient-blob blob-2 analytics-blob-2"></div>
+
+        <div class="reveal from-left">
+            <div class="section-eyebrow">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>Il valore non finisce a fine serata.</h2>
+            <p>Leggi cosa converte, cosa rallenta e dove si perde domanda. Usa i dati per migliorare pricing, staffing,
+                layout e offerta del prossimo evento.</p>
+            <div class="analytics-cards">
+                <div class="an-card">
+                    <div class="an-icon">📍</div>
+                    <h4>Performance per area</h4>
+                    <p>Quali zone vendono e quali rallentano. Per fascia oraria e punto di servizio.</p>
+                </div>
+                <div class="an-card">
+                    <div class="an-icon">📈</div>
+                    <h4>Picchi reali</h4>
+                    <p>Quando la domanda cresce davvero. Lettura dei colli di bottiglia in tempo reale.</p>
+                </div>
+                <div class="an-card">
+                    <div class="an-icon">🛒</div>
+                    <h4>Mix prodotti</h4>
+                    <p>Cosa viene scelto, cosa resta indietro. Evidenza di cosa converte e cosa rallenta.</p>
+                </div>
+                <div class="an-card">
+                    <div class="an-icon">🧠</div>
+                    <h4>Decisioni migliori</h4>
+                    <p>Meno percezioni, più evidenze operative. Insight concreti per il prossimo evento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="reveal from-right">
+            <!--
       REPLACE WITH YOUR SCREENSHOT:
       <img src="orlay-analytics-screenshot.png" alt="Analytics" style="width:100%;border-radius:20px;box-shadow:0 20px 60px rgba(10,30,60,.2);">
     -->
-    <div class="analytics-visual">
-      <div class="av-title">Analytics post-evento</div>
-      <div class="av-meta">Summer Festival 2026 · 30 mar - 30 apr</div>
-      <div class="av-kpis">
-        <div class="av-kpi"><div class="av-kpi-v">37.8K€</div><div class="av-kpi-l">Incassato</div></div>
-        <div class="av-kpi"><div class="av-kpi-v">3.000</div><div class="av-kpi-l">Ordini totali</div></div>
-        <div class="av-kpi"><div class="av-kpi-v">18,99€</div><div class="av-kpi-l">Ticket medio</div></div>
-      </div>
-      <div class="dash-section-title" style="padding:0 0 8px;">Domanda per fascia oraria</div>
-      <div class="chart-bars">
-        <div class="cb" style="height:25%"></div>
-        <div class="cb" style="height:40%"></div>
-        <div class="cb" style="height:55%"></div>
-        <div class="cb hi" style="height:85%"></div>
-        <div class="cb hi" style="height:100%"></div>
-        <div class="cb hi" style="height:90%"></div>
-        <div class="cb" style="height:65%"></div>
-        <div class="cb" style="height:35%"></div>
-      </div>
-      <div class="av-legend">
-        <div class="av-leg-item"><div class="dot" style="background:var(--blue)"></div>Ordini</div>
-        <div class="av-leg-item"><div class="dot" style="background:rgba(26,143,255,.3)"></div>Pagamenti</div>
-      </div>
-      <div class="area-table">
-        <div class="dash-section-title" style="padding:12px 0 6px;">Performance per area</div>
-        <div class="area-row">
-          <span class="area-name">Bar A – Gate Nord</span>
-          <div class="area-bar-wrap"><div class="area-bar-fill" style="width:88%"></div></div>
-          <span class="area-val">88%</span>
+            <div class="analytics-visual">
+                <div class="av-title">Analytics post-evento</div>
+                <div class="av-meta">Summer Festival 2026 · 30 mar - 30 apr</div>
+                <div class="av-kpis">
+                    <div class="av-kpi">
+                        <div class="av-kpi-v" data-animate data-target="37800">37.8K€</div>
+                        <div class="av-kpi-l">Incassato</div>
+                    </div>
+                    <div class="av-kpi">
+                        <div class="av-kpi-v" data-animate data-target="3000">3.000</div>
+                        <div class="av-kpi-l">Ordini totali</div>
+                    </div>
+                    <div class="av-kpi">
+                        <div class="av-kpi-v" data-animate data-target="1899">18,99€</div>
+                        <div class="av-kpi-l">Ticket medio</div>
+                    </div>
+                </div>
+                <div class="dash-section-title" style="padding:0 0 8px;">Domanda per fascia oraria</div>
+                <div class="chart-bars">
+                    <div class="cb" style="height:25%"></div>
+                    <div class="cb" style="height:40%"></div>
+                    <div class="cb" style="height:55%"></div>
+                    <div class="cb hi" style="height:85%"></div>
+                    <div class="cb hi" style="height:100%"></div>
+                    <div class="cb hi" style="height:90%"></div>
+                    <div class="cb" style="height:65%"></div>
+                    <div class="cb" style="height:35%"></div>
+                </div>
+                <div class="av-legend">
+                    <div class="av-leg-item">
+                        <div class="dot" style="background:var(--blue)"></div>Ordini
+                    </div>
+                    <div class="av-leg-item">
+                        <div class="dot" style="background:rgba(26,143,255,.3)"></div>Pagamenti
+                    </div>
+                </div>
+                <div class="area-table">
+                    <div class="dash-section-title" style="padding:12px 0 6px;">Performance per area</div>
+                    <div class="area-row">
+                        <span class="area-name">Bar A – Gate Nord</span>
+                        <div class="area-bar-wrap">
+                            <div class="area-bar-fill" style="width:88%"></div>
+                        </div>
+                        <span class="area-val">88%</span>
+                    </div>
+                    <div class="area-row">
+                        <span class="area-name">Bar B – Gate Sud</span>
+                        <div class="area-bar-wrap">
+                            <div class="area-bar-fill" style="width:72%"></div>
+                        </div>
+                        <span class="area-val">72%</span>
+                    </div>
+                    <div class="area-row">
+                        <span class="area-name">VIP Lounge</span>
+                        <div class="area-bar-wrap">
+                            <div class="area-bar-fill" style="width:94%"></div>
+                        </div>
+                        <span class="area-val">94%</span>
+                    </div>
+                    <div class="area-row">
+                        <span class="area-name">Food Court Centro</span>
+                        <div class="area-bar-wrap">
+                            <div class="area-bar-fill" style="width:61%"></div>
+                        </div>
+                        <span class="area-val">61%</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="area-row">
-          <span class="area-name">Bar B – Gate Sud</span>
-          <div class="area-bar-wrap"><div class="area-bar-fill" style="width:72%"></div></div>
-          <span class="area-val">72%</span>
-        </div>
-        <div class="area-row">
-          <span class="area-name">VIP Lounge</span>
-          <div class="area-bar-wrap"><div class="area-bar-fill" style="width:94%"></div></div>
-          <span class="area-val">94%</span>
-        </div>
-        <div class="area-row">
-          <span class="area-name">Food Court Centro</span>
-          <div class="area-bar-wrap"><div class="area-bar-fill" style="width:61%"></div></div>
-          <span class="area-val">61%</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      S8 – CTA FINALE + FORM
 ══════════════════════════════════════════ -->
-<section id="cta-final">
-  <div class="reveal from-left">
-    <div class="section-eyebrow">
-      <div class="eyebrow-dots"><span></span><span></span><span></span></div>
-    </div>
-    <h2>Vuoi capire dove il tuo evento sta perdendo vendite?</h2>
-    <p>Prenota una demo: analizziamo insieme flussi, punti bar, aree critiche e opportunità di ricavo.</p>
-    <div class="trust-row">
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Nessun impegno
-      </div>
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Demo personalizzata
-      </div>
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Risposta entro 24h
-      </div>
-    </div>
-  </div>
-  <div class="form-card reveal from-right">
-    <h3>Richiedi una demo</h3>
-    <div class="form-grid">
-      <div class="form-group">
-        <label>Nome *</label>
-        <input type="text" placeholder="Il tuo nome">
-      </div>
-      <div class="form-group">
-        <label>Azienda / Venue *</label>
-        <input type="text" placeholder="Nome azienda o venue">
-      </div>
-      <div class="form-group">
-        <label>Tipo di evento *</label>
-        <select>
-          <option value="">Seleziona...</option>
-          <option>Festival</option>
-          <option>Concerto</option>
-          <option>Stadio / Palazzetto</option>
-          <option>Food Court</option>
-          <option>Hospitality</option>
-          <option>Evento corporate</option>
-          <option>Altro</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Email *</label>
-        <input type="email" placeholder="email@azienda.it">
-      </div>
-      <div class="form-group">
-        <label>Telefono</label>
-        <input type="tel" placeholder="+39 000 000 0000">
-      </div>
-      <div class="form-group">
-        <label>&nbsp;</label>
-        <div></div>
-      </div>
-      <div class="form-group full">
-        <label>Messaggio (opzionale)</label>
-        <textarea placeholder="Raccontaci il tuo evento, quanti punti di servizio, capienza…"></textarea>
-      </div>
-    </div>
-    <button class="form-submit">Invia richiesta demo →</button>
-    <p class="form-privacy">Ti ricontattiamo solo per valutare il progetto Orlay Pay. Nessuna newsletter, nessun spam.</p>
-  </div>
-</section>
+    <section id="cta-final" data-bg-color="#000000">
+        <div class="reveal from-left">
+            <div class="section-eyebrow">
+                <div class="eyebrow-dots"><span></span><span></span><span></span></div>
+            </div>
+            <h2>Vuoi capire dove il tuo evento sta perdendo vendite?</h2>
+            <p>Prenota una demo: analizziamo insieme flussi, punti bar, aree critiche e opportunità di ricavo.</p>
+            <div class="trust-row">
+                <div class="trust-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Nessun impegno
+                </div>
+                <div class="trust-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Demo personalizzata
+                </div>
+                <div class="trust-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Risposta entro 24h
+                </div>
+            </div>
+        </div>
+        <div class="form-card reveal from-right">
+            <h3>Richiedi una demo</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Nome *</label>
+                    <input type="text" placeholder="Il tuo nome">
+                </div>
+                <div class="form-group">
+                    <label>Azienda / Venue *</label>
+                    <input type="text" placeholder="Nome azienda o venue">
+                </div>
+                <div class="form-group">
+                    <label>Tipo di evento *</label>
+                    <select>
+                        <option value="">Seleziona...</option>
+                        <option>Festival</option>
+                        <option>Concerto</option>
+                        <option>Stadio / Palazzetto</option>
+                        <option>Food Court</option>
+                        <option>Hospitality</option>
+                        <option>Evento corporate</option>
+                        <option>Altro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="email@azienda.it">
+                </div>
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="+39 000 000 0000">
+                </div>
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <div></div>
+                </div>
+                <div class="form-group full">
+                    <label>Messaggio (opzionale)</label>
+                    <textarea placeholder="Raccontaci il tuo evento, quanti punti di servizio, capienza…"></textarea>
+                </div>
+            </div>
+            <button class="form-submit">Invia richiesta demo →</button>
+            <p class="form-privacy">Ti ricontattiamo solo per valutare il progetto Orlay Pay. Nessuna newsletter, nessun
+                spam.</p>
+        </div>
+    </section>
 
-<!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════ -->
-<footer>
-  <div class="footer-logo">
-    <div class="logo-wrap">
-      <img src="images/logo-full.png" alt="Orlay Pay" class="logo-img">
-  </div>
-  </div>
-  <p>Continuità di vendita per eventi live ad alta affluenza.</p>
-  <p style="font-size:.72rem;">© 2026 Orlay Pay. Tutti i diritti riservati.</p>
-</footer>
-
-<script src="script.js"></script>
+    <footer>
+        <div class="footer-logo">
+            <div class="logo-wrap">
+                <img src="images/logo-full.png" alt="Orlay Pay" class="logo-img">
+            </div>
+        </div>
+        <p>Continuità di vendita per eventi live ad alta affluenza.</p>
+        <p style="font-size:.72rem;">© 2026 Orlay Pay. Tutti i diritti riservati.</p>
+    </footer>
+    <div class="cursor-glow"></div>
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
