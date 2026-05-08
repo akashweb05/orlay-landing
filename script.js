@@ -485,45 +485,79 @@ animateGlow();
 ========================================= */
 
 const storySteps = document.querySelectorAll('.story-step');
-const screenSlider = document.querySelector('.screen-slider');
+const slides = document.querySelectorAll('.dashboard-screen');
 
-window.addEventListener('scroll', () => {
+const storyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const index = Array.from(storySteps).indexOf(entry.target);
+            
+            // Remove active from all
+            storySteps.forEach(step => step.classList.remove('active'));
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            // Add active to current
+            entry.target.classList.add('active');
+            if (slides[index]) {
+                slides[index].classList.add('active');
+            }
+        }
+    });
+}, { threshold: 0.5 }); // When 50% of the step is visible
 
-  let current = 0;
+storySteps.forEach(step => storyObserver.observe(step));
 
-  storySteps.forEach((step, index) => {
+/* LIVE COUNTER ANIMATION */
 
-    const rect = step.getBoundingClientRect();
+const liveCounters = document.querySelectorAll("[data-live-counter]");
 
-    if(rect.top < window.innerHeight * 0.45){
-      current = index;
-    }
+const animateLiveCounter = (counter) => {
 
-  });
+    const target = +counter.getAttribute("data-live-counter");
 
-  storySteps.forEach(step => step.classList.remove('active'));
+    let current = 0;
 
-  if(storySteps[current]){
-    storySteps[current].classList.add('active');
-  }
+    const increment = target / 90;
 
-  if(screenSlider){
-    screenSlider.style.transform =
-      `translateY(-${current * 33.333}%)`;
-  }
+    const updateCounter = () => {
 
+        current += increment;
+
+        if(current < target){
+
+            counter.innerText =
+                target > 1000
+                ? Math.floor(current).toLocaleString()
+                : Math.floor(current);
+
+            requestAnimationFrame(updateCounter);
+
+        }else{
+
+            counter.innerText =
+                target > 1000
+                ? target.toLocaleString()
+                : target;
+        }
+    };
+
+    updateCounter();
+};
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            animateLiveCounter(entry.target);
+
+            observer.unobserve(entry.target);
+        }
+    });
+
+},{threshold:0.5});
+
+liveCounters.forEach(counter=>{
+    observer.observe(counter);
 });
-
-const slides = document.querySelectorAll(".screen-img");
-
-let currentSlide = 0;
-
-setInterval(() => {
-
-  slides[currentSlide].classList.remove("active");
-
-  currentSlide = (currentSlide + 1) % slides.length;
-
-  slides[currentSlide].classList.add("active");
-
-}, 2500);
